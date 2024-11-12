@@ -1,20 +1,31 @@
+/* Step 1: Reset default margins and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+/* Step 2: Define the custom font using @font-face */
+@font-face {
+    font-family: 'Sour Gummy';
+    src: url('fonts/SourGummy-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+/* Step 3: Apply the custom font to the body */
+body {
+    font-family: 'Sour Gummy', sans-serif; /* Apply custom font */
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text color */
+}
+
+/* Step 4: Header styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffb3c1;
+    background-color: #ffb3c1; /* Light pink header background */
     padding: 20px;
 }
 
@@ -24,9 +35,9 @@ header .logo {
 }
 
 header .logo-img {
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
+    height: 50px; /* Adjust this value if the logo is too large or small */
+    width: auto; /* Keeps the aspect ratio intact */
+    margin-right: 15px; /* Adds space between the logo and the title */
 }
 
 header h1 {
@@ -35,6 +46,7 @@ header h1 {
     margin: 0;
 }
 
+/* Step 5: Navigation styles */
 header nav ul {
     list-style-type: none;
     display: flex;
@@ -47,23 +59,25 @@ header nav a {
     font-size: 1.2em;
 }
 
+/* Step 6: Homepage Section */
 #homepage {
-    background-color: #ffe0e9;
+    background-color: #ffe0e9; /* Soft pink background for homepage */
     padding: 40px;
     text-align: center;
 }
 
 #homepage button {
-    background-color: #ffb3c1;
+    background-color: #ffb3c1; /* Button background color */
     padding: 10px 20px;
     border: none;
     cursor: pointer;
 }
 
+/* Step 7: Features Section */
 #features {
     padding: 30px;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Light grey background */
 }
 
 #features ul {
@@ -71,11 +85,12 @@ header nav a {
     margin-top: 20px;
 }
 
+/* Step 8: Products Section */
 #products {
     display: flex;
     justify-content: space-around;
     padding: 40px 0;
-    background-color: #ffe0e9;
+    background-color: #ffe0e9; /* Soft pink background */
 }
 
 .product {
@@ -87,13 +102,15 @@ header nav a {
 }
 
 .product button {
-    background-color: #ffb3c1;
+    background-color: #ffb3c1; /* Button background color for products */
     padding: 10px;
     border: none;
     cursor: pointer;
 }
+
+/* Step 9: Logo image styling */
 .logo-img {
-    height: 50px; /* Adjust this value if the logo is too large or too small */
-    width: auto; /* Keeps the aspect ratio intact */
-    margin-right: 15px; /* Adds space between the logo and the title */
+    height: 50px; /* Adjust logo size */
+    width: auto; /* Keep aspect ratio */
+    margin-right: 15px; /* Space between logo and title */
 }
