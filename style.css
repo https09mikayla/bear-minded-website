@@ -1,18 +1,16 @@
-/* Global reset */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     color: #333;
 }
 
-/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -27,19 +25,17 @@ header .logo {
 }
 
 header .logo-img {
-    height: 50px; /* Adjust this value if the logo is too large or too small */
-    width: auto; /* Keeps the aspect ratio intact */
+    height: 50px;
+    width: auto;
     margin-right: 10px;
 }
 
 header h1 {
-    font-family: 'SourGummy', sans-serif;
     font-size: 2em;
     color: white;
     margin: 0;
 }
 
-/* Navigation menu */
 header nav ul {
     list-style-type: none;
     display: flex;
@@ -52,20 +48,14 @@ header nav a {
     font-size: 1.2em;
 }
 
-/* Homepage section */
 #homepage {
     background-color: #ffe0e9;
     padding: 40px;
     text-align: center;
 }
 
-#homepage h2 {
-    font-family: 'SourGummy', sans-serif;
-}
-
 #homepage button {
     background-color: #ffb3c1;
-    color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -73,11 +63,6 @@ header nav a {
     border-radius: 5px;
 }
 
-#homepage button:hover {
-    background-color: #ff8ba7; /* Slightly darker color on hover */
-}
-
-/* Features section */
 #features {
     padding: 30px;
     text-align: center;
@@ -89,11 +74,6 @@ header nav a {
     margin-top: 20px;
 }
 
-#features li {
-    margin-bottom: 10px;
-}
-
-/* Product section */
 #products {
     display: flex;
     justify-content: space-around;
@@ -114,18 +94,13 @@ header nav a {
     padding: 10px;
     border: none;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.2em;
     border-radius: 5px;
 }
 
-.product button:hover {
-    background-color: #ff8ba7;
-}
-
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #ffb3c1;
-    color: white;
+/* Ensure the logo is properly styled */
+.logo-img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
 }
