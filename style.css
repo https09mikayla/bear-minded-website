@@ -1,31 +1,23 @@
-/* Step 1: Reset default margins and padding */
+/* Global reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Step 2: Define the custom font using @font-face */
-@font-face {
-    font-family: 'Sour Gummy';
-    src: url('fonts/SourGummy-Italic-VariableFont_wdth,wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Step 3: Apply the custom font to the body */
+/* Body styles */
 body {
-    font-family: 'Sour Gummy', sans-serif; /* Apply custom font */
-    background-color: #f9f9f9; /* Light background */
-    color: #333; /* Dark text color */
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Step 4: Header styles */
+/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffb3c1; /* Light pink header background */
+    background-color: #ffb3c1;
     padding: 20px;
 }
 
@@ -35,18 +27,19 @@ header .logo {
 }
 
 header .logo-img {
-    height: 50px; /* Adjust this value if the logo is too large or small */
+    height: 50px; /* Adjust this value if the logo is too large or too small */
     width: auto; /* Keeps the aspect ratio intact */
-    margin-right: 15px; /* Adds space between the logo and the title */
+    margin-right: 10px;
 }
 
 header h1 {
+    font-family: 'SourGummy', sans-serif;
     font-size: 2em;
     color: white;
     margin: 0;
 }
 
-/* Step 5: Navigation styles */
+/* Navigation menu */
 header nav ul {
     list-style-type: none;
     display: flex;
@@ -59,62 +52,17 @@ header nav a {
     font-size: 1.2em;
 }
 
-/* Step 6: Homepage Section */
+/* Homepage section */
 #homepage {
-    background-color: #ffe0e9; /* Soft pink background for homepage */
+    background-color: #ffe0e9;
     padding: 40px;
     text-align: center;
 }
 
-#homepage button {
-    background-color: #ffb3c1; /* Button background color */
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+#homepage h2 {
+    font-family: 'SourGummy', sans-serif;
 }
 
-/* Step 7: Features Section */
-#features {
-    padding: 30px;
-    text-align: center;
-    background-color: #f0f0f0; /* Light grey background */
-}
-
-#features ul {
-    list-style-type: none;
-    margin-top: 20px;
-}
-
-/* Step 8: Products Section */
-#products {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 0;
-    background-color: #ffe0e9; /* Soft pink background */
-}
-
-.product {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-}
-
-.product button {
-    background-color: #ffb3c1; /* Button background color for products */
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Step 9: Logo image styling */
-.logo-img {
-    height: 50px; /* Adjust logo size */
-    width: auto; /* Keep aspect ratio */
-    margin-right: 15px; /* Space between logo and title */
-}
-/* Add this to style.css */
 #homepage button {
     background-color: #ffb3c1;
     color: white;
@@ -127,4 +75,57 @@ header nav a {
 
 #homepage button:hover {
     background-color: #ff8ba7; /* Slightly darker color on hover */
+}
+
+/* Features section */
+#features {
+    padding: 30px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#features ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+#features li {
+    margin-bottom: 10px;
+}
+
+/* Product section */
+#products {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #ffe0e9;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.product button {
+    background-color: #ffb3c1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: #ff8ba7;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffb3c1;
+    color: white;
 }
