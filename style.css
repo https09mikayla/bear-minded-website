@@ -92,3 +92,8 @@ header nav a {
     border: none;
     cursor: pointer;
 }
+.logo-img {
+    height: 50px; /* Adjust this value if the logo is too large or too small */
+    width: auto; /* Keeps the aspect ratio intact */
+    margin-right: 15px; /* Adds space between the logo and the title */
+}
